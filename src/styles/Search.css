@@ -1,0 +1,25 @@
+select {
+  font-size: 1.2em;
+  margin-top: 25px;
+  padding-left: 5px;
+  outline: none;
+  border: 0;
+  border-bottom: 1px solid #757575;
+  margin-bottom: 2px;
+  outline: none;
+  text-align: center;
+}
+@media screen and (max-width: 1200px) {
+	select{
+    width:35%;
+  }
+}
+@media screen and (max-width: 500px) {
+	select{
+    width:80%;
+  }
+}
+
+.jumbotron {
+  margin-top: -15px;
+}

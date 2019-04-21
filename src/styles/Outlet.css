@@ -1,0 +1,27 @@
+.outletSection {
+    width: 80%;
+    margin: 0 auto;
+    border-style: none none none none;
+    border-color:#757575;
+    border-width:5px;
+    text-align: center;
+}
+
+.generalInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.generalInfo>* {
+    margin: 0 8px;
+}
+
+.flagCode {
+    width: 32px;
+    height: 20px;
+}
+
+.outletText{
+  text-align: right;
+}
