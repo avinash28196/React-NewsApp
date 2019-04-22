@@ -3,7 +3,11 @@ import axios from 'axios';
 import { findFlag } from './helpers';
 import countrynames from 'country-list';
 
+const API_KEY =`${process.env.REACT_APP_NEWS_API_KEY}`
+console.log("API", API_KEY);
+
 class PostHeader extends Component {
+
   constructor(props) {
     // Pass props to parent class
     super(props);
@@ -12,6 +16,9 @@ class PostHeader extends Component {
       data: [],
     };
   }
+
+
+
 
 
   // Lifecycle method
@@ -27,11 +34,13 @@ class PostHeader extends Component {
     }
   }
 
+
+
   getSources() {
     // Make HTTP reques with Axios
     axios
       .get(
-        `https://newsapi.org/v2/sources?language=en&apiKey=13235f0d880743ba9e900cbe25cea29e`
+        `https://newsapi.org/v2/sources?language=en&apiKey=${API_KEY}`
       )
       .then(res => {
         // Set state with result

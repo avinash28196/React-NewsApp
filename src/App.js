@@ -7,6 +7,8 @@ import './styles/Footer.css';
 import logo from './images/react.svg';
 import news from './images/newspaper.png';
 
+
+
 class App extends Component {
   render() {
     return (

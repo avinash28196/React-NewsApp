@@ -3,7 +3,7 @@ import axios from 'axios';
 import Post from './Post';
 import { Row, Col, Container } from 'reactstrap';
 
-
+const API_KEY =`${process.env.REACT_APP_NEWS_API_KEY}`
 
 class Display extends Component {
 
@@ -22,7 +22,7 @@ class Display extends Component {
         this.setState({
           url: `https://newsapi.org/v2/top-headlines?sources=${
             nextProps.default
-          }&apiKey=13235f0d880743ba9e900cbe25cea29e`
+          }&apiKey=${API_KEY}`
 
         });
         console.log("this is nextprops "  + nextProps.default);
@@ -33,10 +33,9 @@ class Display extends Component {
 
 
     getArticles(url) {
-      const apiKey = '13235f0d880743ba9e900cbe25cea29e';
       // Make HTTP reques with Axios
       axios.get(
-        `https://newsapi.org/v2/top-headlines?sources=${url}&apiKey=${apiKey}` )
+        `https://newsapi.org/v2/top-headlines?sources=${url}&apiKey=${API_KEY}` )
           .then( response => {
               console.log(response.data)
               const posts = response.data.articles.slice(0,18);

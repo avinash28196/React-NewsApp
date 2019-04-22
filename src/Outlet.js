@@ -3,6 +3,8 @@ import axios from 'axios';
 import './styles/Outlet.css';
 import { findFlag } from './helpers';
 
+const API_KEY =`${process.env.REACT_APP_NEWS_API_KEY}`
+
 class Outlet extends Component {
   constructor(props) {
     // Pass props to parent class
@@ -31,7 +33,7 @@ class Outlet extends Component {
     // Make HTTP reques with Axios
     axios
       .get(
-        `https://newsapi.org/v2/sources?language=en&apiKey=13235f0d880743ba9e900cbe25cea29e`
+        `https://newsapi.org/v2/sources?language=en&apiKey=${API_KEY}`
       )
       .then(res => {
         // Set state with result
