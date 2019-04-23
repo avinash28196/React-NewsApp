@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { findFlag } from './helpers';
-import countrynames from 'country-list';
 
 const API_KEY =`${process.env.REACT_APP_NEWS_API_KEY}`
 console.log("API", API_KEY);

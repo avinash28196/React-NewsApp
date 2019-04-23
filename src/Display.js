@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Post from './Post';
-import { Row, Col, Container } from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 
 const API_KEY =`${process.env.REACT_APP_NEWS_API_KEY}`
 

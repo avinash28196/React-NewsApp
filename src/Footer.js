@@ -6,20 +6,23 @@ class Footer extends Component {
     return (
       <div className="footerSection">
         <div className="social">
-          <a href="https://github.com/avinash28196" target="_blank">
+          <a href="https://github.com/avinash28196"
+            target="_blank"
+            rel="noopener noreferrer">
             <i className="fa fa-2x fa-github" aria-hidden="true" />
           </a>
 
           <a
             href="https://www.linkedin.com/in/avinash28196/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <i className="fa fa-2x fa-linkedin" aria-hidden="true" />
           </a>
 
         </div>
 
-        <a className="smoothScroll" href="#">
+        <a className="smoothScroll">
           <i className="fa fa-2x fa-arrow-up" aria-hidden="true" />
         </a>
 
@@ -30,6 +33,7 @@ class Footer extends Component {
             id="repo"
             href="https://github.com/avinash28196/React-News-App"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Repo
             <i className="fa fa-code-fork" aria-hidden="true" />
