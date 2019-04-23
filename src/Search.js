@@ -5,6 +5,8 @@ import './styles/Display.css';
 import Outlet from './Outlet.js';
 import './styles/Outlet.css';
 
+const API_KEY =`${process.env.REACT_APP_NEWS_API_KEY}`
+
 class Search extends Component {
   constructor(props) {
     // Pass props to parent class
@@ -19,7 +21,7 @@ class Search extends Component {
     this.handleChange = this.handleChange.bind(this);
 
     this.apiUrl =
-      'https://newsapi.org/v2/sources?language=en&apiKey=13235f0d880743ba9e900cbe25cea29e';
+      `https://newsapi.org/v2/sources?language=en&apiKey=${API_KEY}`;
   }
 
   handleChange(event) {
@@ -35,7 +37,6 @@ class Search extends Component {
       this.setState({ data: res.data.sources });
       this.setState({ count: res.data.sources.length });
       //console.log(this.state.data);
-      console.log(this.state.value);
     });
   }
 

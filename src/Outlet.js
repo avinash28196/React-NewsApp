@@ -55,7 +55,7 @@ class Outlet extends Component {
               <div key={y} className="singleNew">
                 <div className="generalInfo">
                   <h4>
-                    <a href={item.url} target="_blank">
+                    <a href={item.url} rel="noopener noreferrer" target="_blank">
                       {item.name}
                     </a>
                   </h4>

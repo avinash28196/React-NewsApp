@@ -27,7 +27,7 @@ class App extends Component {
       <div className="app">
       <nav className="navbar navbar-expand-sm navbar-light bg-dark mb-3">
         <div className="container">
-            <a className="navbar-brand" ><img className="appLogo" src={logo} alt="React Logo"/></a>
+            <img className="appLogo" src={logo} alt="React Logo"/>
             <div className="title">
               <h1>News Around the World</h1>
               <h4>Powered by

@@ -22,9 +22,11 @@ class Footer extends Component {
 
         </div>
 
-        <a className="smoothScroll">
+        <button type="button" className="btn btn-link smoothScroll" href="#">
           <i className="fa fa-2x fa-arrow-up" aria-hidden="true" />
-        </a>
+        </button>
+
+
 
         <span className="coffee">
           Made with

@@ -25,7 +25,7 @@ class Display extends Component {
           }&apiKey=${API_KEY}`
 
         });
-        console.log("this is nextprops "  + nextProps.default);
+        //console.log("this is nextprops "  + nextProps.default);
         this.getArticles(nextProps.default);
       }
     }
@@ -37,18 +37,16 @@ class Display extends Component {
       axios.get(
         `https://newsapi.org/v2/top-headlines?sources=${url}&apiKey=${API_KEY}` )
           .then( response => {
-              console.log(response.data)
               const posts = response.data.articles.slice(0,18);
               const updatedPosts = posts.map(post => {
                    return {
                       ...post,
                       newsid: url,
-
                   }
               });
               // Set state with result
               this.setState({posts: updatedPosts});
-              console.log(updatedPosts);
+
           })
           .catch(error => {
             console.log(error);
