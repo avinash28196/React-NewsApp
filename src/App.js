@@ -25,17 +25,7 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-      <nav className="navbar navbar-expand-sm navbar-light bg-dark mb-3">
-        <div className="container">
-            <img className="appLogo" src={logo} alt="React Logo"/>
-            <div className="title">
-              <h1>News Around the World</h1>
-              <h4>Powered by
-                <a href="https://newsapi.org/"> News API </a>🔥 </h4>
-            </div>
-            <img className="scriptLogo" src={news} alt="Javascript Logo"/>
-        </div>
-        </nav>
+      
 
         <Search default="cnn"/>
         <Footer/>
