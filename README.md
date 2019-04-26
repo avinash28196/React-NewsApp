@@ -1,4 +1,4 @@
-#New Screenshot coming soon
+
 
 <!---  LOGO   -->
 <div align="center">
@@ -40,7 +40,7 @@
 ## Demo
 
 <div align="center">
-    <img src="http://i.imgur.com/yWHwHz3.gif"/>
+    <img src="https://i.imgur.com/9Xn9sVZ.jpg"/>
 </div>
 
 ## Usage
