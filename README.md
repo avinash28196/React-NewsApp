@@ -22,7 +22,7 @@
 
 🔥 __React News__ is a React App showing news results from more than 70 sources. Uses data from [News API](https://newsapi.org/), it's responsive and super snappy for quick switching thanks to React Virtual DOM 🔥
 
-<p><a href="http://news-app.surge.sh/" class="btn btn-primary btn-md">Launch App</a></p>
+<p><a href="https://news-outlets.herokuapp.com/" class="btn btn-primary btn-md">Launch App</a></p>
 </div>
 
 ## Features
