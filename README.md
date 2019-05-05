@@ -33,7 +33,7 @@
 
 * 📱 __Responsive__: Made mobile responsive with Flexbox
 
-* 🔥 __Live__: Deployed with [Surge](https://surge.sh/)
+* 🔥 __Live__: Deployed with [Heroku](https://www.heroku.com/)
 
 <!---  SCREENSHOOT   -->
 
